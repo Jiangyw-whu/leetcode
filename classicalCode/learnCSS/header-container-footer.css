@@ -1,0 +1,40 @@
+/* 上下固定中间自适应布局 */
+/* 使用绝对定位布局 */
+.header{
+    position: absolute;
+    top:0px;
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+.container{
+    position: absolute;
+    top:100px;
+    bottom: 100px;
+    width: 100%;
+    background-color: green;
+}
+.footer{
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: yellow;
+}
+/* 使用flex布局 */
+.body{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    height: 100px;
+    background-color: red;
+}
+.container{
+    flex-wrap: 1;
+    background-color: green;
+}
+.footer{
+    height: 100px;
+    background-color: yellow;
+}
