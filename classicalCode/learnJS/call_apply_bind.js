@@ -47,3 +47,10 @@ Function.prototype.myBind = function(context){
         return that.apply(context,arg.concat(newArg))
     }
 }
+
+const functionNew = ((Con, ...args) =>{
+    const obj = {};
+    obj._proto_ = Con.prototype;
+    const res = Con.apply(obj,...args);
+    return res instanceof Object? res : obj;
+})

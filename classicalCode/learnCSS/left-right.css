@@ -1,0 +1,10 @@
+/*两栏布局一般指的是页面中一共两栏，左边固定，右边自适应的布局，一共有四种实现的方式。*/
+/* float的方式 */
+.left{
+    float: left;
+    width: 100px;
+}
+.right{
+    margin-left: 100px;
+    width: auto;
+}

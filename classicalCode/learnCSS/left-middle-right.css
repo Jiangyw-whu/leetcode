@@ -1,0 +1,77 @@
+.outer {
+    height: 100px;
+  }
+  
+  .left {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: tomato;
+  }
+  
+  .right {
+    float: right;
+    width: 200px;
+    height: 100px;
+    background: gold;
+  }
+  
+  .center {
+    height: 100px;
+    margin-left: 100px;
+    margin-right: 200px;
+    background: lightgreen;
+  }
+
+
+  .outer {
+    position: relative;
+    height: 100px;
+  }
+  
+  .left {
+    position: absolute;
+  
+    width: 100px;
+    height: 100px;
+    background: tomato;
+  }
+  
+  .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    width: 200px;
+    height: 100px;
+    background: gold;
+  }
+  
+  .center {
+    margin-left: 100px;
+    margin-right: 200px;
+    height: 100px;
+    background: lightgreen;
+  }
+
+
+  .outer {
+    display: flex;
+    height: 100px;
+  }
+  
+  .left {
+    flex: 00100px;
+    background: tomato;
+  }
+  
+  .right {
+    flex: 00200px;
+    background: gold;
+  }
+  
+  .center {
+    flex: auto;
+    background: lightgreen;
+  }
+  
