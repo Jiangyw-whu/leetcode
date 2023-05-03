@@ -37,5 +37,23 @@ const getNewArr =  function(arr){
 }
 
 //对象里的属性求和
-
+var result = [
+    {
+      subject: 'math',
+      score: 10
+    },
+    {
+      subject: 'chinese',
+      score: 20
+    },
+    {
+      subject: 'english',
+      score: 30
+    }
+  ];
+   
+  var sum = result.reduce(function(prev, cur) {
+    return cur.score + prev;
+  }, 0);
+  console.log(sum) //60
 

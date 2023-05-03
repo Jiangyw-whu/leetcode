@@ -107,5 +107,4 @@ function promise (){
     } catch (reason) {
         reject(reason);
     }
-
 }
