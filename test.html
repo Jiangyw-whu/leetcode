@@ -1,0 +1,47 @@
+<!-- 用 css 实现如下的多列布局（类似九宫格，右下角为空）效果：父元素宽度自适应所在容器宽度，高度由子元素撑开，有不定数量的直接子元素（可以用8个演示），每一行排3 个子元素，子元素之间的水平、垂直间距为 10px ，子元素的宽度自适应父元素的宽度（(父元素宽度 - 10px * 2) / 3），子元素的高度与自身的宽度成正比（比如 2:1 ）。
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box-contenter {
+    display: flex;
+    width: 600px;
+    height: auto;
+    background: blue;
+    flex-flow: wrap;
+    padding: 10px 0 0 10px;
+}
+.box {
+    margin-right:10px;
+    margin-bottom: 10px;
+    background: red;
+    height: 100px;
+}
+</style>
+<body>
+    <div class="box-contenter">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
+
+3 5 false 1 'success' 6 7 4 
+
+
+微 p1 p2
+宏 setTimeout1(4) setTimeout2(6) setTimeout3(7) 
